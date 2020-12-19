@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IggfCommon\IggfCommon.csproj" />
+    <ProjectReference Include="..\IggfApiGameCommon\IggfApiGameCommon.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IggfCommon
+namespace IggfApiWebpageCommon
 {
     public class WeatherForecast
     {

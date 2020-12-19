@@ -1,4 +1,4 @@
-﻿using IggfCommon;
+﻿using IggfApiWebpageCommon;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

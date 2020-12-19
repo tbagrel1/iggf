@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IggfScoreApi", "IggfScoreAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IggfScoreWebpage", "IggfScoreWebpage\IggfScoreWebpage.csproj", "{15CEB56C-8624-4096-945B-40C5D1A3B540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IggfCommon", "IggfCommon\IggfCommon.csproj", "{C5934FA3-8602-4973-95FF-0888FFD63DB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IggfApiWebpageCommon", "IggfApiWebpageCommon\IggfApiWebpageCommon.csproj", "{C5934FA3-8602-4973-95FF-0888FFD63DB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IggfGame", "IggfGame\IggfGame.csproj", "{99BD4675-EB76-4A8F-B121-CED3840C49D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IggfApiGameCommon", "IggfApiGameCommon\IggfApiGameCommon.csproj", "{9B4C7827-7BFA-4690-8A81-26D1189A5241}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{99BD4675-EB76-4A8F-B121-CED3840C49D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99BD4675-EB76-4A8F-B121-CED3840C49D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99BD4675-EB76-4A8F-B121-CED3840C49D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4C7827-7BFA-4690-8A81-26D1189A5241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4C7827-7BFA-4690-8A81-26D1189A5241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4C7827-7BFA-4690-8A81-26D1189A5241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4C7827-7BFA-4690-8A81-26D1189A5241}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
