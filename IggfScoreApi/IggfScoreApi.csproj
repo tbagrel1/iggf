@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="3.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IggfCommon\IggfCommon.csproj" />
+    <ProjectReference Include="..\IggfGame\IggfGame.csproj" />
+    <ProjectReference Include="..\IggfScoreWebpage\IggfScoreWebpage.csproj" />
+  </ItemGroup>
+
+
+</Project>
