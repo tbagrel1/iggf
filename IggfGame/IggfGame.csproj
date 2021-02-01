@@ -16,4 +16,8 @@
     <ProjectReference Include="..\IggfApiGameCommon\IggfApiGameCommon.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-10">
+            <DurationDisplay DecimalSeconds="DecimalSeconds" />
+        </div>
+        <div class="col-2">
+            <div class="incr-decr-button-area">
+                <button type="button" class="incr-button" @onclick="IncrementDuration">+</button>
+                <button type="button" class="decr-button" @onclick="DecrementDuration">-</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter]
+    public double DecimalSeconds { get; set; }
+    
+    [Parameter]
+    public EventCallback<double> DecimalSecondsChanged { get; set; }
+
+    async Task IncrementDuration()
+    {
+        DecimalSeconds += 30;
+        await DecimalSecondsChanged.InvokeAsync(DecimalSeconds);
+    }
+    
+    async Task DecrementDuration()
+    {
+        DecimalSeconds -= 30;
+        await DecimalSecondsChanged.InvokeAsync(DecimalSeconds);
+    }
+}

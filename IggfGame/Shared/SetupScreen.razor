@@ -1,0 +1,83 @@
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">Configurez votre partie</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Choix du texte</h3>
+                            <div class="container-fluid" id="text-setup">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <nav class="nav nav-tabs">
+                                            <a class="nav-item nav-link active" href="#example-texts-tab" data-toggle="tab">Textes d'exemple</a>
+                                            <a class="nav-item nav-link" href="#frequent-words-tab" data-toggle="tab">Mots fréquents</a>
+                                            <a class="nav-item nav-link" href="#custom-text-tab" data-toggle="tab">Texte perso.</a>
+                                        </nav>
+                                        <div class="tab-content" id="text-setup-tabs">
+                                            <div class="tab-pane active" id="example-texts-tab">
+                                                
+                                            </div>
+                                            <div class="tab-pane" id="frequent-words-tab">
+
+                                            </div>
+                                            <div class="tab-pane" id="custom-text-tab">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container-fluid" id="time-setup-and-start">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <h3 class="card-title">Temps</h3>
+                                    <div class="card-body">
+                                        <div class="container-fluid" id="time-setup">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <DurationPicker @bind-DecimalSeconds="DecimalSeconds"></DurationPicker>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <input class="form-check-input position-static" type="checkbox" id="mad-mode-checkbox"/>
+                                                </div>
+                                                <div class="col-10">
+                                                    <span id="mad-mode-label">Mad Mode</span>
+                                                </div>
+                                                <!-- TODO: tooltip mad mode -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <span class="score-coeff">Multiplicateur score : x @ScoreMultiplier</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button id="start-button" type="button" class="btn btn-primary">Commencer !</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private double DecimalSeconds { get; set; } = 60;
+    private double ScoreMultiplier => DecimalSeconds <= 60 ? 0.6 + (0.2 / 30) * DecimalSeconds : 1 + (0.7 / 540) * (DecimalSeconds - 60);
+}

@@ -1,0 +1,18 @@
+<div class="duration-display">
+    <span class="duration-display-minutes">
+        @Minutes
+    </span>
+    <span class="duration-display-colon">
+        :
+    </span>
+    <span class="duration-display-seconds">
+        @Seconds
+    </span>
+</div>
+
+@code {
+    [Parameter] public double DecimalSeconds { get; set; }
+    private int RoundedSeconds => (int) Math.Ceiling(DecimalSeconds);
+    private int Minutes => RoundedSeconds / 60;
+    private int Seconds => RoundedSeconds % 60;
+}
